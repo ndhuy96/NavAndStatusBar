@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tXQ-5T-b5q">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="NavAndStatusBarSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnX-63-HVU">
+                                <rect key="frame" x="172" y="574" width="71" height="30"/>
+                                <state key="normal" title="Next Page">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleNextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2T-zH-RUp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bnX-63-HVU" secondAttribute="trailing" constant="171" id="HNZ-je-vWV"/>
+                            <constraint firstItem="bnX-63-HVU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="172" id="Qix-tN-taH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bnX-63-HVU" secondAttribute="bottom" constant="209" id="UAV-f1-LdP"/>
+                            <constraint firstItem="bnX-63-HVU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="486" id="VDU-2l-5ee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Hgc-HL-x4I"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="XLn-MO-Tk2">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="0ZD-aU-O87" customClass="DetailViewController" customModule="NavAndStatusBarSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j6P-Ps-4S0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYB-4E-Kmu">
+                                <rect key="frame" x="172" y="542" width="71" height="30"/>
+                                <state key="normal" title="Next Page">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleNextButtonTapped:" destination="0ZD-aU-O87" eventType="touchUpInside" id="7DF-fk-ZIp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guN-Zi-bgi">
+                                <rect key="frame" x="193" y="606" width="30" height="30"/>
+                                <state key="normal" title="Pop">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handlePopButtonTapped:" destination="0ZD-aU-O87" eventType="touchUpInside" id="npW-BZ-6Sw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15822528825215598" green="1" blue="0.094631533203787033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="omH-Uv-XW6" firstAttribute="trailing" secondItem="guN-Zi-bgi" secondAttribute="trailing" constant="191" id="SE7-VX-y2d"/>
+                            <constraint firstItem="iYB-4E-Kmu" firstAttribute="top" secondItem="omH-Uv-XW6" secondAttribute="top" constant="498" id="UL7-Nj-5uq"/>
+                            <constraint firstItem="guN-Zi-bgi" firstAttribute="leading" secondItem="omH-Uv-XW6" secondAttribute="leading" constant="193" id="auI-xL-iHR"/>
+                            <constraint firstItem="guN-Zi-bgi" firstAttribute="top" secondItem="iYB-4E-Kmu" secondAttribute="bottom" constant="34" id="eGy-Mc-ZPk"/>
+                            <constraint firstItem="iYB-4E-Kmu" firstAttribute="leading" secondItem="omH-Uv-XW6" secondAttribute="leading" constant="172" id="n77-i5-Bc4"/>
+                            <constraint firstItem="omH-Uv-XW6" firstAttribute="trailing" secondItem="iYB-4E-Kmu" secondAttribute="trailing" constant="171" id="z0G-R1-KcU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="omH-Uv-XW6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktt-kH-Cwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909" y="135"/>
+        </scene>
+        <!--Detail View Controller2-->
+        <scene sceneID="OgO-Ab-4Hg">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController2" id="7AD-ok-J2x" customClass="DetailViewController2" customModule="NavAndStatusBarSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YPM-gq-oT2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVt-mt-zBS">
+                                <rect key="frame" x="145" y="602" width="145" height="30"/>
+                                <state key="normal" title="Pop To Specific Page">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handlePopButtonTapped:" destination="7AD-ok-J2x" eventType="touchUpInside" id="UdX-tn-0cd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eno-OE-U9D">
+                                <rect key="frame" x="182" y="542" width="71" height="30"/>
+                                <state key="normal" title="Next Page">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleNextButtonTapped:" destination="7AD-ok-J2x" eventType="touchUpInside" id="NYf-lk-oJC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41234621579244302" green="0.34183718511370542" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="54e-2C-LDe" firstAttribute="trailing" secondItem="Eno-OE-U9D" secondAttribute="trailing" constant="161" id="CHy-lC-BBL"/>
+                            <constraint firstItem="SVt-mt-zBS" firstAttribute="top" secondItem="Eno-OE-U9D" secondAttribute="bottom" constant="30" id="FUY-Qo-guS"/>
+                            <constraint firstItem="54e-2C-LDe" firstAttribute="trailing" secondItem="SVt-mt-zBS" secondAttribute="trailing" constant="124" id="FuN-9z-a2m"/>
+                            <constraint firstItem="SVt-mt-zBS" firstAttribute="leading" secondItem="54e-2C-LDe" secondAttribute="leading" constant="145" id="MCS-v6-cBP"/>
+                            <constraint firstItem="Eno-OE-U9D" firstAttribute="top" secondItem="54e-2C-LDe" secondAttribute="top" constant="498" id="Pfw-qB-mSt"/>
+                            <constraint firstItem="Eno-OE-U9D" firstAttribute="leading" secondItem="54e-2C-LDe" secondAttribute="leading" constant="182" id="cv5-IL-DkF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="54e-2C-LDe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpm-f3-hb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2758" y="135"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="ozA-Cp-5Wz">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="tXQ-5T-b5q" customClass="NavigationViewController" customModule="NavAndStatusBarSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uhb-og-mij">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4ed-qy-RY0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfZ-JI-YwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-219" y="139"/>
+        </scene>
+        <!--Detail View Controller3-->
+        <scene sceneID="p6E-tl-LEb">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController3" id="QZH-ba-XT4" customClass="DetailViewController3" customModule="NavAndStatusBarSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qbg-8Q-2no">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-ZP-7nj">
+                                <rect key="frame" x="132" y="540" width="178" height="30"/>
+                                <state key="normal" title="Show/Hide Navigation Bar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleShowHideNaviBarButtonTapped:" destination="QZH-ba-XT4" eventType="touchUpInside" id="TsN-kD-LU2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obX-wf-nLL">
+                                <rect key="frame" x="179" y="592" width="83" height="30"/>
+                                <state key="normal" title="Pop To Root">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handlePopButtonTapped:" destination="QZH-ba-XT4" eventType="touchUpInside" id="fAf-BW-Js2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.12899630779504601" blue="0.060558794851844122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CH6-Op-qW5" firstAttribute="bottom" secondItem="obX-wf-nLL" secondAttribute="bottom" constant="240" id="13M-Uf-1Zh"/>
+                            <constraint firstItem="YHt-ZP-7nj" firstAttribute="leading" secondItem="CH6-Op-qW5" secondAttribute="leading" constant="132" id="4NY-s6-OvY"/>
+                            <constraint firstItem="obX-wf-nLL" firstAttribute="top" secondItem="YHt-ZP-7nj" secondAttribute="bottom" constant="22" id="6pg-zJ-U3U"/>
+                            <constraint firstItem="YHt-ZP-7nj" firstAttribute="top" secondItem="CH6-Op-qW5" secondAttribute="top" constant="496" id="Dql-1A-UnD"/>
+                            <constraint firstItem="CH6-Op-qW5" firstAttribute="trailing" secondItem="obX-wf-nLL" secondAttribute="trailing" constant="152" id="mD6-xA-TAl"/>
+                            <constraint firstItem="CH6-Op-qW5" firstAttribute="trailing" secondItem="YHt-ZP-7nj" secondAttribute="trailing" constant="104" id="oPf-Sb-XEv"/>
+                            <constraint firstItem="obX-wf-nLL" firstAttribute="leading" secondItem="CH6-Op-qW5" secondAttribute="leading" constant="179" id="puJ-ym-ziF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CH6-Op-qW5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gw0-Qq-TNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3658" y="139"/>
+        </scene>
+    </scenes>
+</document>
